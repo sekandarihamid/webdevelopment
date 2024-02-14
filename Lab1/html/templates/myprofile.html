@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css"> <!-- اتصال فایل CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("/static/photo.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .content {
+            position: relative;
+            padding: 20px;
+        }
+        
+        .about-me, .contact-me {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .about-me h2, .contact-me h2 {
+            margin-top: 0;
+        }
+        
+        .contact-me a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-me a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi everyone, My name is Hamidreza Sekandari from Iran and I am very happy to see you here. Have a nice day.</p>
+        </div>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:hamidtest66@gmail.com">hamidtest66@gmail.com</a></p>
+            <p>Personal Website: <a href="https://sekandari.wixsite.com/it-security">sekandari.wixsite.com/it-security</a></p>
+            <p>GitHub: <a href="https://github.com/sekandarihamid">github.com/sekandarihamid</a></p>
+        </div>
+    </div>
+</body>
+</html>
